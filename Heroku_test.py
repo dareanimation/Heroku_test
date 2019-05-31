@@ -11,6 +11,7 @@ client = discord.Client()
 # 起動時に動作する処理
 @client.event
 async def on_ready():
+    await client.change_presence(activity=discord.Streaming(name='j_xx_scald_xx_k', url='https://www.twitch.tv/j_xx__scald__xx_k'))
     # 起動したらターミナルにログイン通知が表示される
     print('ログインしました')
 
